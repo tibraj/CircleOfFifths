@@ -5,24 +5,42 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="app.css">
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous"> -->
     <title>Circle Of Fifths</title>
 </head>
 <body>
-
     <header id="home">
         <div class="container">
           <nav id="nav">
             <ul>
               <li><a href="#major">Major</a></li>
-              <li><a href="#Minor">Minor</a></li>
+              <li><a href="#minor">Minor</a></li>
               <li><a href="#major-minor">Major/Minor</a></li>
             </ul>
           </nav>
           <div class="content">
-            <a href="#maj-circle" class="btn-dark">Circle of Fifths</a>
+            <a id="major-circle">Circle of Fifths</a>
+
+            <div id="major-modal" class="modal">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <span id="close-modal">&times;</span>
+                        <h2>Header</h2>
+                    </div>
+                    <div class="modal-body">
+                        <p>Testing</p>
+                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis asperiores recusandae amet eaque accusamus deleniti distinctio aspernatur exercitationem nulla. Ex eum aliquam vel pariatur officia, numquam ut distinctio amet esse repellat neque nesciunt nemo recusandae laborum quam temporibus, iure, id iusto! Eum, aliquid? Blanditiis obcaecati error nihil quam fugiat cumque voluptates. Eum, tempora animi dolorem saepe tempore repellat neque sint sed totam a, natus ab eos delectus velit, suscipit necessitatibus quos molestiae placeat assumenda. Ex molestias quo adipisci quos rerum fuga commodi consequatur ea fugiat, unde, quibusdam esse nisi maiores debitis omnis alias velit. Minus consectetur deserunt laborum? Ex nemo sequi aut, consequuntur molestias esse eligendi vel eos voluptas earum in consectetur, magni quae saepe recusandae dignissimos dolorem eveniet omnis id beatae voluptatem aliquam culpa ipsam? Ea quos cumque reprehenderit, laboriosam at expedita minus saepe ut neque similique alias qui nam laudantium sequi vel voluptate sapiente non eos fuga delectus debitis. Aut iste fugit distinctio consectetur omnis unde quidem aperiam reprehenderit aliquam pariatur sequi obcaecati, impedit voluptatem assumenda doloremque cupiditate. Commodi recusandae tempore expedita nam, consequatur explicabo ut reiciendis quas neque, repellendus repellat culpa iste dolor cumque saepe ipsum, dignissimos corrupti assumenda maxime animi! Doloremque facilis iste repellendus dolor quia.</p>
+                    </div>
+                    <div class="modal-footer">
+                        <h3>Footer</h3>
+                    </div>
+                </div>
+            </div>
+
           </div>
         </div>
       </header>
 
+      <script src="app.js"></script>
 </body>
 </html>
