@@ -1,0 +1,15 @@
+- The circle of fifths is a visual tool that organizes the twelve chromatic pitches in a sequence of perfect
+fifths.
+- It can represent notes, chords and keys inherent to each pitch.
+
+- It can also be used as a compositional tool.
+- The circle of fifths helps determine the fifth in a chord. (Ab C Eb G)
+- The circle of fifths helps determine the root and dominant chord in a particular key. (Bb F)
+- The circle of fifths is useful for identifying accidentials.
+- Following the circle clockwise increments each note's key by a sharp.
+- Following the circle counter-clockwise increments each note's key by a flat.
+
+- It can also be used as a compositional tool.
+- The circle of fifths is useful for identifying similarities.
+- An alternate ring lists each key's relative minors that share the same notes.
+- In tandem with the major ring, a more nuanced key map appears allowing for transitional key changes.
