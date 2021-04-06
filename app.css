@@ -66,6 +66,21 @@ a:hover {
     padding: 1rem 1.5rem;
 }
 
+.column {
+    float: left;
+    width: 32%;
+    padding: 0 9px 0 8px;
+    margin-top: 20px;
+    line-height: 1.7rem;
+    font-size: large;
+  }
+  
+  .info-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+
 .modal {
     display: none;
     position: fixed;
