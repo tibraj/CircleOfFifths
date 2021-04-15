@@ -109,7 +109,7 @@ a:hover {
     text-align: center;
 }
 
-#close-modal {
+#close-modal, #c-close-modal {
     color: #ccc;
     float: right;
     top: 0;
@@ -117,7 +117,8 @@ a:hover {
     display: block;
 }
 
-#close-modal:hover, #close-modal:focus {
+#close-modal:hover, #close-modal:focus, 
+#c-close-modal:hover, #c-close-modal:focus {
     color: #000;
     text-decoration: none;
     cursor: pointer;
