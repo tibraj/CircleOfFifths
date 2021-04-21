@@ -151,6 +151,28 @@ span {
     cursor: pointer;
 }
 
+.modal p {
+    
+}
+
+h3 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+li {
+    display: inline;
+    font-size: x-large;
+    font-weight: lighter;
+    color: #000;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+audio {
+    margin-top: 10px;
+}
+
 img {
     width: 100%;
     height: 100%;
@@ -164,6 +186,7 @@ img#circle, map area{
 .modal-image {
     width: 100%;
     height: 100%;
+    margin-bottom: 10px;
 }
 
 audio {
