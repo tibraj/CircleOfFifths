@@ -65,7 +65,19 @@ a:hover {
 }
 
 #nav li {
-    padding: 1rem 1.5rem;
+    padding: 1rem 1rem;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+
+#comp {
+    margin-right: 40px;
+    margin-left: 35px;
+}
+
+#map {
+    margin-right: 100px;
+    margin-left: 10px;
 }
 
 .modal {
@@ -113,7 +125,9 @@ span {
     text-align: center;
 } */
 
-#close-modal, 
+#close-modal,
+#close-comp-modal,
+#close-map-modal, 
 #c-close-modal,
 #g-close-modal, 
 #d-close-modal, 
@@ -134,6 +148,8 @@ span {
 }
 
 #close-modal:hover, #close-modal:focus, 
+#close-comp-modal:hover, #close-comp-modal:focus, 
+#close-map-modal:hover, #close-map-modal:focus, 
 #c-close-modal:hover, #c-close-modal:focus, 
 #g-close-modal:hover, #g-close-modal:focus, 
 #d-close-modal:hover, #d-close-modal:focus, 

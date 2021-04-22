@@ -1,4 +1,4 @@
-// Modal 
+// Circle Modal 
 
 let modal  = document.getElementById('major-modal');
 let majorModalLink = document.getElementById('major-circle');
@@ -21,6 +21,58 @@ function closeModal() {
 function closeModalOutside(e) {
     if(e.target === modal) {
     modal.style.display = 'none';
+    }
+}
+
+// As Composition Modal
+
+let compModal  = document.getElementById('comp-modal');
+let compModalLink = document.getElementById('comp');
+let compModalClose = document.getElementById('close-comp-modal');
+
+compModalLink.addEventListener('click', openCompModal);
+
+compModalClose.addEventListener('click', closeCompModal);
+
+window.addEventListener('click', closeCompModalOutside);
+
+function openCompModal() {
+    compModal.style.display = 'block';
+}
+
+function closeCompModal() {
+    compModal.style.display = 'none';
+}
+
+function closeCompModalOutside(e) {
+    if(e.target === compModal) {
+    compModal.style.display = 'none';
+    }
+}
+
+// As Map Modal
+
+let mapModal  = document.getElementById('map-modal');
+let mapModalLink = document.getElementById('map');
+let mapModalClose = document.getElementById('close-map-modal');
+
+mapModalLink.addEventListener('click', openMapModal);
+
+mapModalClose.addEventListener('click', closeMapModal);
+
+window.addEventListener('click', closeMapModalOutside);
+
+function openMapModal() {
+    mapModal.style.display = 'block';
+}
+
+function closeMapModal() {
+    mapModal.style.display = 'none';
+}
+
+function closeMapModalOutside(e) {
+    if(e.target === mapModal) {
+    mapModal.style.display = 'none';
     }
 }
 
