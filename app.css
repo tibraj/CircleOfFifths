@@ -168,7 +168,8 @@ span {
 }
 
 .modal p {
-    
+   margin-top: 25px; 
+   margin-bottom: 25px; 
 }
 
 h3 {
@@ -205,11 +206,19 @@ img#circle, map area{
     margin-bottom: 10px;
 }
 
+.key-image {
+    width: 50%;
+    height: 50%;
+    margin-bottom: 0;
+}
 audio {
     width: 100%;
 }
 
-
+.major-minor {
+    border-top: rgb(37, 85, 218) solid 5px;
+    padding-top: 25px;
+}
 
 
 
