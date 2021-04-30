@@ -85,6 +85,7 @@
               <div class="modal-body">
                 <div class="info-row">
                   <p>The circle of fifths is useful for identifying accidentials. </p>
+                  <img src="images/CircleWithAccidentals.png" class="modal-image" alt="">
                   <p>Following the circle clockwise increments each note's key by a sharp.</p> 
                   <p>Following the circle counter-clockwise increments each note's key by a flat.</p>   
                   <p>The circle of fifths is useful for identifying similarities.</p>
@@ -105,10 +106,10 @@
                 <h3>C Major</h3>
                 <img src="images/keys/C-KEY.png" alt="" class="key-image">
                 <p>The key of C has no accidentals.</p>
-                <ul>
-                  <li>C</li><li>D</li><li>E</li><li>F</li><li>G</li><li>A</li><li>B</li>
+                <ul id="c-scale">
+                  <li id="c-1">C</li><li id="c-2">D</li><li id="c-3">E</li><li id="c-4">F</li><li id="c-5">G</li><li id="c-6">A</li><li id="c-7">B</li>
                 </ul>
-                <audio id="player" controls src="audio/TimShiftPractice.mp3"></audio>
+                <audio id="c-player" controls src="audio/TimShiftPractice.mp3"></audio>
                 <h3 class="major-minor">A Minor</h3>
                 <img src="images/keys/a-minor-KEY.png" alt="" class="key-image">
                 <p>A is the relative minor of C Major</p>
@@ -116,12 +117,6 @@
                   <li>A</li><li>B</li><li>C</li><li>D</li><li>E</li><li>F</li><li>G</li>
                 </ul>
                 <audio id="player" controls src="audio/TimShiftPractice.mp3"></audio>
-                  <!-- <div> 
-                    <button onclick="document.getElementById('player').play()">Play</button> 
-                    <button onclick="document.getElementById('player').pause()">Pause</button> 
-                    <button onclick="document.getElementById('player').volume += 0.1">Vol +</button> 
-                    <button onclick="document.getElementById('player').volume -= 0.1">Vol -</button> 
-                  </div>           -->
               </div>              
               </div>
           </div>
@@ -422,5 +417,6 @@
     </header>
       
       <script src="app.js"></script>
+      <script src="audio.js"></script>
 </body>
 </html>
