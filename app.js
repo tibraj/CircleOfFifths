@@ -1,4 +1,4 @@
-
+let sounds = document.getElementsByTagName("audio");
 
 
 // Circle Modal 
@@ -93,11 +93,19 @@ function openCModal() {
 
 function closeCModal() {
     cModal.style.display = 'none';
+    for(i=0; i<sounds.length; i++) {
+        sounds[i].pause();
+        sounds[i].currentTime = 0;
+    };
 }
 
 function closeCModalOutside(e) {
     if(e.target === cModal) {
-    cModal.style.display = 'none';
+        cModal.style.display = 'none';
+        for(i=0; i<sounds.length; i++) {
+            sounds[i].pause();
+            sounds[i].currentTime = 0;
+        };
     }
 }
 
