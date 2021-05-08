@@ -199,6 +199,7 @@ let b7 = document.getElementById("b-7");
 
 // g sharp minor
 
+let gSMinPlayer = document.getElementById("g-sharp-min-player");
 let gSM1 = document.getElementById("g-s-m-1");
 let gSM2 = document.getElementById("g-s-m-2");
 let gSM3 = document.getElementById("g-s-m-3");
@@ -213,6 +214,24 @@ let gSM7 = document.getElementById("g-s-m-7");
 
   gSMinPlayer.addEventListener("pause", function() {returnColor(gSM1, gSM2, gSM3, gSM4, gSM5, gSM6, gSM7); gSMinPlayer.currentTime = 0;}, false);
   gSMinPlayer.addEventListener("ended", function() {returnColor(gSM1, gSM2, gSM3, gSM4, gSM5, gSM6, gSM7); gSMinPlayer.currentTime = 0;}, false);
+
+// c flat minor
+
+let cBMinPlayer = document.getElementById("c-flat-min-player");
+let cBM1 = document.getElementById("c-b-m-1");
+let cBM2 = document.getElementById("c-b-m-2");
+let cBM3 = document.getElementById("c-b-m-3");
+let cBM4 = document.getElementById("c-b-m-4");
+let cBM5 = document.getElementById("c-b-m-5");
+let cBM6 = document.getElementById("c-b-m-6");
+let cBM7 = document.getElementById("c-b-m-7");
+
+  cBMinPlayer.addEventListener("play", 
+  function() {changeColor(cBM1, cBM2, cBM3, cBM4, cBM5, cBM6, cBM7);}, false
+);
+
+  cBMinPlayer.addEventListener("pause", function() {returnColor(cBM1, cBM2, cBM3, cBM4, cBM5, cBM6, cBM7); cBMinPlayer.currentTime = 0;}, false);
+  cBMinPlayer.addEventListener("ended", function() {returnColor(cBM1, cBM2, cBM3, cBM4, cBM5, cBM6, cBM7); cBMinPlayer.currentTime = 0;}, false);
 
 // F SHARP MAJOR
 
@@ -232,8 +251,9 @@ let fS7 = document.getElementById("f-s-7");
   fSPlayer.addEventListener("pause", function() {returnColor(fS1, fS2, fS3, fS4, fS5, fS6, fS7); fSPlayer.currentTime = 0}, false);
   fSPlayer.addEventListener("ended", function() {returnColor(fS1, fS2, fS3, fS4, fS5, fS6, fS7); fSPlayer.currentTime = 0}, false);
 
-// e flat minor
+// d sharp minor
 
+let dSMPlayer = document.getElementById("d-sharp-min-player");
 let dSM1 = document.getElementById("d-s-m-1");
 let dSM2 = document.getElementById("d-s-m-2");
 let dSM3 = document.getElementById("d-s-m-3");
@@ -248,6 +268,239 @@ let dSM7 = document.getElementById("d-s-m-7");
 
   dSMinPlayer.addEventListener("pause", function() {returnColor(dSM1, dSM2, dSM3, dSM4, dSM5, dSM6, dSM7); dSMinPlayer.currentTime = 0;}, false);
   dSMinPlayer.addEventListener("ended", function() {returnColor(dSM1, dSM2, dSM3, dSM4, dSM5, dSM6, dSM7); dSMinPlayer.currentTime = 0;}, false);
+
+// G FLAT MAJOR
+
+let gBPlayer = document.getElementById("g-flat-player");
+let gB1 = document.getElementById("g-b-1");
+let gB2 = document.getElementById("g-b-2");
+let gB3 = document.getElementById("g-b-3");
+let gB4 = document.getElementById("g-b-4");
+let gB5 = document.getElementById("g-b-5");
+let gB6 = document.getElementById("g-b-6");
+let gB7 = document.getElementById("g-b-7");
+
+  gBPlayer.addEventListener("play", 
+  function() {changeColor(gB1, gB2, gB3, gB4, gB5, gB6, gB7);}, false
+  );
+
+  gBPlayer.addEventListener("pause", function() {returnColor(gB1, gB2, gB3, gB4, gB5, gB6, gB7); gBPlayer.currentTime = 0}, false);
+  gBPlayer.addEventListener("ended", function() {returnColor(gB1, gB2, gB3, gB4, gB5, gB6, gB7); gBPlayer.currentTime = 0}, false);
+
+// e flat minor
+
+let eBMinPlayer = document.getElementById("e-flat-min-player");
+let eBM1 = document.getElementById("e-b-m-1");
+let eBM2 = document.getElementById("e-b-m-2");
+let eBM3 = document.getElementById("e-b-m-3");
+let eBM4 = document.getElementById("e-b-m-4");
+let eBM5 = document.getElementById("e-b-m-5");
+let eBM6 = document.getElementById("e-b-m-6");
+let eBM7 = document.getElementById("e-b-m-7");
+
+  eBMinPlayer.addEventListener("play", 
+  function() {changeColor(eBM1, eBM2, eBM3, eBM4, eBM5, eBM6, eBM7);}, false
+);
+
+  eBMinPlayer.addEventListener("pause", function() {returnColor(eBM1, eBM2, eBM3, eBM4, eBM5, eBM6, eBM7); eBMinPlayer.currentTime = 0;}, false);
+  eBMinPlayer.addEventListener("ended", function() {returnColor(eBM1, eBM2, eBM3, eBM4, eBM5, eBM6, eBM7); eBMinPlayer.currentTime = 0;}, false);
+
+// D FLAT MAJOR
+
+let dBPlayer = document.getElementById("d-flat-player");
+let dB1 = document.getElementById("d-b-1");
+let dB2 = document.getElementById("d-b-2");
+let dB3 = document.getElementById("d-b-3");
+let dB4 = document.getElementById("d-b-4");
+let dB5 = document.getElementById("d-b-5");
+let dB6 = document.getElementById("d-b-6");
+let dB7 = document.getElementById("d-b-7");
+
+  dBPlayer.addEventListener("play", 
+  function() {changeColor(dB1, dB2, dB3, dB4, dB5, dB6, dB7);}, false
+  );
+
+  dBPlayer.addEventListener("pause", function() {returnColor(dB1, dB2, dB3, dB4, dB5, dB6, dB7); dBPlayer.currentTime = 0}, false);
+  dBPlayer.addEventListener("ended", function() {returnColor(dB1, dB2, dB3, dB4, dB5, dB6, dB7); dBPlayer.currentTime = 0}, false);
+
+// b flat minor
+  let bBMinPlayer = document.getElementById("b-flat-min-player");
+  let bBM1 = document.getElementById("b-b-m-1");
+  let bBM2 = document.getElementById("b-b-m-2");
+  let bBM3 = document.getElementById("b-b-m-3");
+  let bBM4 = document.getElementById("b-b-m-4");
+  let bBM5 = document.getElementById("b-b-m-5");
+  let bBM6 = document.getElementById("b-b-m-6");
+  let bBM7 = document.getElementById("b-b-m-7");
+  
+    bBMinPlayer.addEventListener("play", 
+    function() {changeColor(bBM1, bBM2, bBM3, bBM4, bBM5, bBM6, bBM7);}, false
+  );
+  
+    bBMinPlayer.addEventListener("pause", function() {returnColor(bBM1, bBM2, bBM3, bBM4, bBM5, bBM6, bBM7); bBMinPlayer.currentTime = 0;}, false);
+    bBMinPlayer.addEventListener("ended", function() {returnColor(bBM1, bBM2, bBM3, bBM4, bBM5, bBM6, bBM7); bBMinPlayer.currentTime = 0;}, false);
+
+// C SHARP MAJOR
+
+let cSPlayer = document.getElementById("c-sharp-player");
+let cS1 = document.getElementById("c-s-1");
+let cS2 = document.getElementById("c-s-2");
+let cS3 = document.getElementById("c-s-3");
+let cS4 = document.getElementById("c-s-4");
+let cS5 = document.getElementById("c-s-5");
+let cS6 = document.getElementById("c-s-6");
+let cS7 = document.getElementById("c-s-7");
+
+  cSPlayer.addEventListener("play", 
+  function() {changeColor(cS1, cS2, cS3, cS4, cS5, cS6, cS7);}, false
+  );
+
+  cSPlayer.addEventListener("pause", function() {returnColor(cS1, cS2, cS3, cS4, cS5, cS6, cS7); cSPlayer.currentTime = 0}, false);
+  cSPlayer.addEventListener("ended", function() {returnColor(cS1, cS2, cS3, cS4, cS5, cS6, cS7); cSPlayer.currentTime = 0}, false);
+
+// A FLAT MAJOR
+
+let aBPlayer = document.getElementById("a-flat-player");
+let aB1 = document.getElementById("a-b-1");
+let aB2 = document.getElementById("a-b-2");
+let aB3 = document.getElementById("a-b-3");
+let aB4 = document.getElementById("a-b-4");
+let aB5 = document.getElementById("a-b-5");
+let aB6 = document.getElementById("a-b-6");
+let aB7 = document.getElementById("a-b-7");
+
+  aBPlayer.addEventListener("play", 
+  function() {changeColor(aB1, aB2, aB3, aB4, aB5, aB6, aB7);}, false
+  );
+
+  aBPlayer.addEventListener("pause", function() {returnColor(aB1, aB2, aB3, aB4, aB5, aB6, aB7); aBPlayer.currentTime = 0}, false);
+  aBPlayer.addEventListener("ended", function() {returnColor(aB1, aB2, aB3, aB4, aB5, aB6, aB7); aBPlayer.currentTime = 0}, false);
+
+// f minor 
+
+let fMinPlayer = document.getElementById("f-min-player");
+let fM1 = document.getElementById("f-m-1");
+let fM2 = document.getElementById("f-m-2");
+let fM3 = document.getElementById("f-m-3");
+let fM4 = document.getElementById("f-m-4");
+let fM5 = document.getElementById("f-m-5");
+let fM6 = document.getElementById("f-m-6");
+let fM7 = document.getElementById("f-m-7");
+
+  fMinPlayer.addEventListener("play", 
+  function() {changeColor(fM1, fM2, fM3, fM4, fM5, fM6, fM7);}, false
+);
+
+  fMinPlayer.addEventListener("pause", function() {returnColor(fM1, fM2, fM3, fM4, fM5, fM6, fM7); fMinPlayer.currentTime = 0;}, false);
+  fMinPlayer.addEventListener("ended", function() {returnColor(fM1, fM2, fM3, fM4, fM5, fM6, fM7); fMinPlayer.currentTime = 0;}, false);
+
+// E FLAT MAJOR 
+
+let eBPlayer = document.getElementById("e-flat-player");
+let eB1 = document.getElementById("e-b-1");
+let eB2 = document.getElementById("e-b-2");
+let eB3 = document.getElementById("e-b-3");
+let eB4 = document.getElementById("e-b-4");
+let eB5 = document.getElementById("e-b-5");
+let eB6 = document.getElementById("e-b-6");
+let eB7 = document.getElementById("e-b-7");
+
+  eBPlayer.addEventListener("play", 
+  function() {changeColor(eB1, eB2, eB3, eB4, eB5, eB6, eB7);}, false
+  );
+
+  eBPlayer.addEventListener("pause", function() {returnColor(eB1, eB2, eB3, eB4, eB5, eB6, eB7); eBPlayer.currentTime = 0}, false);
+  eBPlayer.addEventListener("ended", function() {returnColor(eB1, eB2, eB3, eB4, eB5, eB6, eB7); eBPlayer.currentTime = 0}, false);
+
+// c minor
+
+let cMinPlayer = document.getElementById("c-min-player");
+let cM1 = document.getElementById("c-m-1");
+let cM2 = document.getElementById("c-m-2");
+let cM3 = document.getElementById("c-m-3");
+let cM4 = document.getElementById("c-m-4");
+let cM5 = document.getElementById("c-m-5");
+let cM6 = document.getElementById("c-m-6");
+let cM7 = document.getElementById("c-m-7");
+
+  cMinPlayer.addEventListener("play", 
+  function() {changeColor(cM1, cM2, cM3, cM4, cM5, cM6, cM7);}, false
+);
+
+  cMinPlayer.addEventListener("pause", function() {returnColor(cM1, cM2, cM3, cM4, cM5, cM6, cM7); cMinPlayer.currentTime = 0;}, false);
+  cMinPlayer.addEventListener("ended", function() {returnColor(cM1, cM2, cM3, cM4, cM5, cM6, cM7); cMinPlayer.currentTime = 0;}, false);
+
+// B FLAT MAJOR
+
+let bBPlayer = document.getElementById("b-flat-player");
+let bB1 = document.getElementById("b-b-1");
+let bB2 = document.getElementById("b-b-2");
+let bB3 = document.getElementById("b-b-3");
+let bB4 = document.getElementById("b-b-4");
+let bB5 = document.getElementById("b-b-5");
+let bB6 = document.getElementById("b-b-6");
+let bB7 = document.getElementById("b-b-7");
+
+  bBPlayer.addEventListener("play", 
+  function() {changeColor(bB1, bB2, bB3, bB4, bB5, bB6, bB7);}, false
+  );
+
+  bBPlayer.addEventListener("pause", function() {returnColor(bB1, bB2, bB3, bB4, bB5, bB6, bB7); bBPlayer.currentTime = 0}, false);
+  bBPlayer.addEventListener("ended", function() {returnColor(bB1, bB2, bB3, bB4, bB5, bB6, bB7); bBPlayer.currentTime = 0}, false);
+
+// g minor
+
+let gMinPlayer = document.getElementById("g-min-player");
+let gM1 = document.getElementById("g-m-1");
+let gM2 = document.getElementById("g-m-2");
+let gM3 = document.getElementById("g-m-3");
+let gM4 = document.getElementById("g-m-4");
+let gM5 = document.getElementById("g-m-5");
+let gM6 = document.getElementById("g-m-6");
+let gM7 = document.getElementById("g-m-7");
+
+  gMinPlayer.addEventListener("play", 
+  function() {changeColor(gM1, gM2, gM3, gM4, gM5, gM6, gM7);}, false
+);
+
+  gMinPlayer.addEventListener("pause", function() {returnColor(gM1, gM2, gM3, gM4, gM5, gM6, gM7); gMinPlayer.currentTime = 0;}, false);
+  gMinPlayer.addEventListener("ended", function() {returnColor(gM1, gM2, gM3, gM4, gM5, gM6, gM7); gMinPlayer.currentTime = 0;}, false);
+  
+// F MAJOR
+
+let fPlayer = document.getElementById("f-player");
+let f1 = document.getElementById("f-1");
+let f2 = document.getElementById("f-2");
+let f3 = document.getElementById("f-3");
+let f4 = document.getElementById("f-4");
+let f5 = document.getElementById("f-5");
+let f6 = document.getElementById("f-6");
+let f7 = document.getElementById("f-7");
+
+  fPlayer.addEventListener("play", 
+  function() {changeColor(f1, f2, f3, f4, f5, f6, f7);}, false
+  );
+
+  fPlayer.addEventListener("pause", function() {returnColor(f1, f2, f3, f4, f5, f6, f7); fPlayer.currentTime = 0}, false);
+  fPlayer.addEventListener("ended", function() {returnColor(f1, f2, f3, f4, f5, f6, f7); fPlayer.currentTime = 0}, false);
+
+// d minor
+
+let dMinPlayer = document.getElementById("d-min-player");
+let dM1 = document.getElementById("d-m-1");
+let dM2 = document.getElementById("d-m-2");
+let dM3 = document.getElementById("d-m-3");
+let dM4 = document.getElementById("d-m-4");
+let dM5 = document.getElementById("d-m-5");
+let dM6 = document.getElementById("d-m-6");
+let dM7 = document.getElementById("d-m-7");
+
+  dMinPlayer.addEventListener("play", 
+  function() {changeColor(dM1, dM2, dM3, dM4, dM5, dM6, dM7);}, false
+);
+
+  dMinPlayer.addEventListener("pause", function() {returnColor(dM1, dM2, dM3, dM4, dM5, dM6, dM7); dMinPlayer.currentTime = 0;}, false);
+  dMinPlayer.addEventListener("ended", function() {returnColor(dM1, dM2, dM3, dM4, dM5, dM6, dM7); dMinPlayer.currentTime = 0;}, false);
 
 // Audio Event Functions
   function changeColor(item1, item2, item3, item4, item5, item6, item7) {
