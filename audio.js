@@ -9,9 +9,9 @@ let c5 = document.getElementById("c-5")
 let c6 = document.getElementById("c-6")
 let c7 = document.getElementById("c-7")
 
-  // cPlayer.addEventListener("play", 
-  // function() {changeColor(c1, c2, c3, c4, c5, c6, c7);}, false
-  // );
+  cPlayer.addEventListener("play", 
+  function() {changeColor(c1, c2, c3, c4, c5, c6, c7);}, false
+  );
 
 
   cPlayer.addEventListener("pause", function() {returnColor(c1, c2, c3, c4, c5, c6, c7); cPlayer.currentTime = 0}, false);
