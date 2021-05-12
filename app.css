@@ -220,7 +220,10 @@ audio {
     padding-top: 25px;
 }
 
-
+.major-minor-top {
+    border-top: rgb(37, 85, 218) solid 5px;
+    padding-top: 25px;
+}
 
 
 @keyframes openModal{
