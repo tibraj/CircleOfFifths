@@ -217,14 +217,14 @@ let gSM7 = document.getElementById("g-s-m-7");
 
 // c flat minor
 
-let cBMinPlayer = document.getElementById("c-flat-min-player");
-let cBM1 = document.getElementById("c-b-m-1");
-let cBM2 = document.getElementById("c-b-m-2");
-let cBM3 = document.getElementById("c-b-m-3");
-let cBM4 = document.getElementById("c-b-m-4");
-let cBM5 = document.getElementById("c-b-m-5");
-let cBM6 = document.getElementById("c-b-m-6");
-let cBM7 = document.getElementById("c-b-m-7");
+let cBMinPlayer = document.getElementById("c-flat-player");
+let cBM1 = document.getElementById("c-b-1");
+let cBM2 = document.getElementById("c-b-2");
+let cBM3 = document.getElementById("c-b-3");
+let cBM4 = document.getElementById("c-b-4");
+let cBM5 = document.getElementById("c-b-5");
+let cBM6 = document.getElementById("c-b-6");
+let cBM7 = document.getElementById("c-b-7");
 
   cBMinPlayer.addEventListener("play", 
   function() {changeColor(cBM1, cBM2, cBM3, cBM4, cBM5, cBM6, cBM7);}, false
@@ -262,26 +262,26 @@ let dSM5 = document.getElementById("d-s-m-5");
 let dSM6 = document.getElementById("d-s-m-6");
 let dSM7 = document.getElementById("d-s-m-7");
 
-  dSMinPlayer.addEventListener("play", 
+  dSMPlayer.addEventListener("play", 
   function() {changeColor(dSM1, dSM2, dSM3, dSM4, dSM5, dSM6, dSM7);}, false
 );
 
-  dSMinPlayer.addEventListener("pause", function() {returnColor(dSM1, dSM2, dSM3, dSM4, dSM5, dSM6, dSM7); dSMinPlayer.currentTime = 0;}, false);
-  dSMinPlayer.addEventListener("ended", function() {returnColor(dSM1, dSM2, dSM3, dSM4, dSM5, dSM6, dSM7); dSMinPlayer.currentTime = 0;}, false);
+  dSMPlayer.addEventListener("pause", function() {returnColor(dSM1, dSM2, dSM3, dSM4, dSM5, dSM6, dSM7); dSMinPlayer.currentTime = 0;}, false);
+  dSMPlayer.addEventListener("ended", function() {returnColor(dSM1, dSM2, dSM3, dSM4, dSM5, dSM6, dSM7); dSMinPlayer.currentTime = 0;}, false);
 
 // G FLAT MAJOR
 
-let gBPlayer = document.getElementById("g-flat-player");
-let gB1 = document.getElementById("g-b-1");
-let gB2 = document.getElementById("g-b-2");
-let gB3 = document.getElementById("g-b-3");
-let gB4 = document.getElementById("g-b-4");
-let gB5 = document.getElementById("g-b-5");
-let gB6 = document.getElementById("g-b-6");
-let gB7 = document.getElementById("g-b-7");
+let gBPlayer = document.getElementById("g-f-player");
+let gB1 = document.getElementById("g-flat-1");
+let gB2 = document.getElementById("g-flat-2");
+let gB3 = document.getElementById("g-flat-3");
+let gB4 = document.getElementById("g-flat-4");
+let gB5 = document.getElementById("g-flat-5");
+let gB6 = document.getElementById("g-flat-6");
+let gB7 = document.getElementById("g-flat-7");
 
   gBPlayer.addEventListener("play", 
-  function() {changeColor(gB1, gB2, gB3, gB4, gB5, gB6, gB7);}, false
+  function() {changeColor(gB1, gB2, gB3, gB4, gB5, gB6, gB7); console.log(gB1, gB2, gB3, gB4, gB5, gB6, gB7);}, false
   );
 
   gBPlayer.addEventListener("pause", function() {returnColor(gB1, gB2, gB3, gB4, gB5, gB6, gB7); gBPlayer.currentTime = 0}, false);
@@ -496,7 +496,7 @@ let dM6 = document.getElementById("d-m-6");
 let dM7 = document.getElementById("d-m-7");
 
   dMinPlayer.addEventListener("play", 
-  function() {changeColor(dM1, dM2, dM3, dM4, dM5, dM6, dM7);}, false
+  function() {changeColor(dM1, dM2, dM3, dM4, dM5, dM6, dM7); console.log(dM1, dM2, dM3, dM4, dM5, dM6, dM7)}, false
 );
 
   dMinPlayer.addEventListener("pause", function() {returnColor(dM1, dM2, dM3, dM4, dM5, dM6, dM7); dMinPlayer.currentTime = 0;}, false);
