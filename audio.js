@@ -1,3 +1,11 @@
+// Declare timeouts
+let timeout1;
+let timeout2;
+let timeout3;
+let timeout4;
+let timeout5;
+let timeout6;
+let timeout7;
 
 // C MAJOR
 let cPlayer = document.getElementById("c-player");
@@ -13,10 +21,8 @@ let c7 = document.getElementById("c-7")
   function() {changeColor(c1, c2, c3, c4, c5, c6, c7);}, false
   );
 
-
-  cPlayer.addEventListener("pause", function() {returnColor(c1, c2, c3, c4, c5, c6, c7); cPlayer.currentTime = 0}, false);
-  cPlayer.addEventListener("ended", function() {returnColor(c1, c2, c3, c4, c5, c6, c7); cPlayer.currentTime = 0}, false);
-
+  cPlayer.addEventListener("pause", function() {returnColor(c1, c2, c3, c4, c5, c6, c7); cPlayer.currentTime = 0;}, false);
+  cPlayer.addEventListener("ended", function() {returnColor(c1, c2, c3, c4, c5, c6, c7); cPlayer.currentTime = 0;}, false); 
 
 // a minor
 
@@ -504,82 +510,29 @@ let dM7 = document.getElementById("d-m-7");
 
 // Audio Event Functions
   function changeColor(item1, item2, item3, item4, item5, item6, item7) {
-    setTimeout(function() {item1.style.color = "blue";}, 1000);
-    setTimeout(function() {item2.style.color = "blue";}, 2000);
-    setTimeout(function () {item3.style.color = "blue";}, 3000);
-    setTimeout(function() {item4.style.color = "blue";}, 4000);
-    setTimeout(function() {item5.style.color = "blue";}, 5000);
-    setTimeout(function() {item6.style.color = "blue";}, 6000);
-    setTimeout(function() {item7.style.color = "blue";}, 7000);
+    timeout1 = setTimeout(function() {item1.style.color = "blue";}, 1000);
+    timeout2 = setTimeout(function() {item2.style.color = "blue";}, 2000);
+    timeout3 = setTimeout(function () {item3.style.color = "blue";}, 3000);
+    timeout4 = setTimeout(function() {item4.style.color = "blue";}, 4000);
+    timeout5 = setTimeout(function() {item5.style.color = "blue";}, 5000);
+    timeout6 = setTimeout(function() {item6.style.color = "blue";}, 6000);
+    timeout7 = setTimeout(function() {item7.style.color = "blue";}, 7000);
+  }
+
+  function stopTimeouts() {
+    let timeouts = [timeout1, timeout2, timeout3, timeout4, timeout5, timeout6, timeout7];
+    for(let i = 0; i < timeouts.length; i++) {
+      clearTimeout(timeouts[i]);
+    }
   }
 
   function returnColor(item1, item2, item3, item4, item5, item6, item7) {
+    stopTimeouts();
     let items = [item1, item2, item3, item4, item5, item6, item7];
     for(let i = 0; i < items.length; i++) {
       items[i].style.color = "black";
     }
   }
 
-
-// Timeout Issues
-// function handlingTimeouts(player, scale, item1, item2, item3, item4, item5, item6, item7) {
-//     let a = setTimeout(function() {item1.style.color = "blue";}, 1000);
-//     let b = setTimeout(function() {item2.style.color = "blue";}, 2000);
-//     let c = setTimeout(function () {item3.style.color = "blue";}, 3000);
-//     let d = setTimeout(function() {item4.style.color = "blue";}, 4000);
-//     let e = setTimeout(function() {item5.style.color = "blue";}, 5000);
-//     let f = setTimeout(function() {item6.style.color = "blue";}, 6000);
-//     let g =setTimeout(function() {item7.style.color = "blue";}, 7000);
-//   if(player.play()) {
-//     setTimeout(function() {item1.style.color = "blue";}, 1000);
-//     setTimeout(function() {item2.style.color = "blue";}, 2000);
-//     setTimeout(function () {item3.style.color = "blue";}, 3000);
-//     setTimeout(function() {item4.style.color = "blue";}, 4000);
-//     setTimeout(function() {item5.style.color = "blue";}, 5000);
-//     setTimeout(function() {item6.style.color = "blue";}, 6000);
-//     setTimeout(function() {item7.style.color = "blue";}, 7000);
-//   } else if (player.pause() || player.ended()) {
-//     clearTimeout(a);
-//     clearTimeout(b);
-//     clearTimeout(c);
-//     clearTimeout(d);
-//     clearTimeout(e);
-//     clearTimeout(f);
-//     clearTimeout(g);
-//     for(let i = 0; i < scale.length; i++) {
-//       scale[i].style.color = "black";
-//     }
-//   }
-// }
-
-// cPlayer.addEventListener("play", 
-// function() {changeScale(cPlayer, c1, c2, c3, c4, c5, c6, c7);}, false
-// );
-
-// function changeScale(player, item1, item2, item3, item4, item5, item6, item7) {
-//   switch(player.currentTime) {
-//     case 1:
-//       item1.style.color = "blue";
-//       break;
-//     case 2:
-//       item2.style.color = "blue";
-//       break;
-//     case 3:
-//       item3.style.color = "blue";
-//       break;
-//     case 4:
-//       item4.style.color = "blue";
-//       break;
-//     case 5:
-//       item5.style.color = "blue";
-//       break;
-//     case 6:
-//       item6.style.color = "blue";
-//       break;
-//     case 7:
-//       item7.style.color = "blue";
-//       break;
-//   }
-// }
 
 
