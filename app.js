@@ -1,4 +1,13 @@
+// Close all audio when modals close
 let sounds = document.getElementsByTagName("audio");
+function closeAllModalAudio() {
+    for(let i = 0; i < sounds.length; i++) {
+        sounds[i].pause();
+        sounds[i].currentTime = 0;
+    }
+}
+
+
 
 
 // Circle Modal 
@@ -38,24 +47,19 @@ window.addEventListener('click', closeCModalOutside);
 
 function openCModal() {
     cModal.style.display = 'block';
+    console.log(sounds);
 }
 
 function closeCModal() {
     cModal.style.display = 'none';
-    for(i=0; i<sounds.length; i++) {
-        sounds[i].pause();
-        sounds[i].currentTime = 0;
-    };
+    closeAllModalAudio();
 }
 
 function closeCModalOutside(e) {
     if(e.target === cModal) {
         cModal.style.display = 'none';
-        for(i=0; i<sounds.length; i++) {
-            sounds[i].pause();
-            sounds[i].currentTime = 0;
-        };
     }
+    closeAllModalAudio();
 }
 
 // G-modal
@@ -72,12 +76,14 @@ function openGModal() {
 
 function closeGModal() {
     gModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeGModalOutside(e) {
     if(e.target === gModal) {
     gModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // D-modal
@@ -94,12 +100,14 @@ function openDModal() {
 
 function closeDModal() {
     dModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeDModalOutside(e) {
     if(e.target === dModal) {
     dModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // A-modal
@@ -116,12 +124,14 @@ function openAModal() {
 
 function closeAModal() {
     aModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeAModalOutside(e) {
     if(e.target === aModal) {
     aModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // E-modal
@@ -138,12 +148,14 @@ function openEModal() {
 
 function closeEModal() {
     eModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeEModalOutside(e) {
     if(e.target === eModal) {
     eModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // B-modal
@@ -160,12 +172,14 @@ function openBModal() {
 
 function closeBModal() {
     bModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeBModalOutside(e) {
     if(e.target === bModal) {
     bModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // F#-modal
@@ -182,12 +196,14 @@ function openFSharpModal() {
 
 function closeFSharpModal() {
     fSharpModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeFSharpModalOutside(e) {
     if(e.target === fSharpModal) {
         fSharpModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // Db-modal
@@ -204,12 +220,14 @@ function openDFlatModal() {
 
 function closeDFlatModal() {
     dFlatModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeDFlatModalOutside(e) {
     if(e.target === dFlatModal) {
         dFlatModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // Ab-modal
@@ -226,12 +244,14 @@ function openAFlatModal() {
 
 function closeAFlatModal() {
     aFlatModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeAFlatModalOutside(e) {
     if(e.target === aFlatModal) {
     aFlatModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // Eb-modal
@@ -248,12 +268,14 @@ function openEFlatModal() {
 
 function closeEFlatModal() {
     eFlatModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeEFlatModalOutside(e) {
     if(e.target === eFlatModal) {
     eFlatModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // Bb-modal
@@ -270,12 +292,14 @@ function openBFlatModal() {
 
 function closeBFlatModal() {
     bFlatModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeBFlatModalOutside(e) {
     if(e.target === bFlatModal) {
     bFlatModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 // F-modal
@@ -292,12 +316,14 @@ function openFModal() {
 
 function closeFModal() {
     fModal.style.display = 'none';
+    closeAllModalAudio();
 }
 
 function closeFModalOutside(e) {
     if(e.target === fModal) {
     fModal.style.display = 'none';
     }
+    closeAllModalAudio();
 }
 
 
